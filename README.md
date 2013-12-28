@@ -10,7 +10,7 @@ $ go get "github.com/yoppi/daemon"
 
 ## How to use
 
-Call `daemon#Daemonize()`, then starting on background.
+Call `daemon#Daemonize()`, then starting process on background.
 
 ```go
 import (
@@ -19,7 +19,7 @@ import (
 
 func main() {
   daemon.Daemonize("app.log")
-  // start background process
+  // starting background process
   for {
     fmt.Println("Background ....")
   }
